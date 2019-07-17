@@ -9,6 +9,31 @@
   </head>
 
   <body>
+    <div class="container">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="<%= welcome_index_path %>">Study Buddy Home</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="<%= @current_page === 'products' ? 'active' : '' %>" ><%= link_to "Flash Cards", flash_cards_path %></li>
+        </ul>
+      </div>
     <%= yield %>
+
+    <style>
+      h1 {
+        color: blue;
+        font-family: verdana;
+        font-size: 300%;
+      }
+      p  {
+        color: red;
+        font-family: courier;
+        font-size: 160%;
+      }
+      body {background-color: powderblue;}
+
+    </style>
   </body>
 </html>

@@ -1,0 +1,17 @@
+<h1>Edit Flash Card</h1>
+
+<%= form_with model: @flash_card, local: true do |form| %>
+  <p>
+    <%= form.label :prompt %><br>
+    <%= form.text_field :prompt %>
+  </p>
+  <p>
+    <%= form.label :answer %><br>
+    <%= form.text_area :answer %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', flash_card_path %>

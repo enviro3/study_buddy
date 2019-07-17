@@ -1,0 +1,11 @@
+<p>
+  <div class="card" style="height: 230 rem; width: 30rem;">
+  <div class="card-body">
+    <h1 class="card-title"><%= @flash_card.prompt %></h1>
+    <a href="<%= flash_cards_previous_path %>" input class="btn btn-outline-secondary btn-lg" type="submit" value="Next" class="card-link">Previous</a>
+    <a href="<%= flash_cards_answer_path %>" input class="btn btn-primary btn-lg card-link " type="submit" value="text">Answer</a>
+    <a href="<%= flash_cards_next_path %>" input class="btn btn-outline-secondary btn-lg" type="submit" value="Next" class="card-link">Next</a>
+  </div>
+</div>
+
+<%= link_to 'Back', flash_cards_path %>
